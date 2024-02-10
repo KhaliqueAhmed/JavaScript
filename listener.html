@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listener</title>
+</head>
+<body>
+    <button id="btn">click me!</button>
+
+    <script>
+        // event listener
+        let btn=document.querySelector('#btn');
+      //handler1
+        btn.addEventListener("click", ()=>{
+            console.log("event handler1");
+        })
+        
+        //handler2
+        btn.addEventListener("click", (event)=>{
+            console.log(event)
+            console.log("event handler2")})
+
+        //handler3
+        const add= function sum(){
+            console.log("handler3");
+        }   
+        btn.addEventListener("click", add);
+
+        //handler4
+
+        const handler4 =()=>{
+            console.log("handler4");
+        }
+        btn.addEventListener("click", handler4);
+
+        //remove event listner
+
+        btn.removeEventListener("click", handler4)
+    </script>
+</body>
+</html>

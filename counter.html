@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            margin-top: 3px;
+        }
+        body{
+            background-color: black;
+            color: red;
+            
+        }
+        .counter{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+        h1{
+            font-size: xx-large;
+        }
+        button{
+            background-color: green;
+            padding: 15px;
+        
+            color: white;
+            font-weight: bolder;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn-group{
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="counter">
+        <h1 id="count">0</h1>
+        <div class="btn-group">
+        <button id="inc">+</button>
+        <button id="dec">-</button>
+        </div>
+    </div>
+
+    <script>
+        let count=document.querySelector("#count");
+        let inc=document.querySelector('#inc');
+        let dec =document.querySelector("#dec");
+        let num=0;
+
+        inc.addEventListener('click',()=>{
+            num++;
+            count.innerText=num;
+        })
+
+        dec.addEventListener('click',()=>{
+            num--;
+            count.innerText=num;
+        })
+    </script>
+</body>
+</html>

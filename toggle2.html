@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Mode</title>
+
+    <style>
+        .dark {
+            background-color: black;
+            color: red;
+        }
+
+        .light {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Change Mode</button>
+    <h2>Sindh Shagird Sabha</h2>
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let mode = 'light';
+        let body = document.querySelector("body");
+
+        btn.addEventListener("click", () => {
+            if (mode === 'light') {
+                mode = 'dark';
+                body.classList.add('dark');
+                body.classList.remove('light')
+            }
+
+            else {
+                mode='light';
+                body.classList.add('light');
+                body.classList.remove('dark')
+            }
+
+            console.log(mode);
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript day1</title>
+    <style>
+        .dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="para">Khalique Ahmed Chandio</p>
+    <button class="btn">Toggle theme</button>
+
+    <button id="darkModeToggle">Dark Mode</button>
+
+    <script>
+        let btn = document.querySelector('.btn');
+        let body = document.querySelector('body');
+        let para = document.querySelector('.para');
+        btn.style.backgroundColor = 'blue';
+        btn.style.color = 'white'
+
+        btn.addEventListener("click", () => {
+            if (body.style.backgroundColor == 'white') {
+                bgColor = 'black';
+                body.style.backgroundColor = 'black';
+                para.style.color = 'white';
+                btn.style.backgroundColor = 'yellowgreen'
+            }
+            else {
+                bgColor = 'white';
+                body.style.backgroundColor = 'white';
+                para.style.color = 'black';
+                btn.style.backgroundColor = 'blue';
+                btn.style.color = 'white'
+            }
+        })
+        const toggleBtn = document.getElementById("darkModeToggle");
+        toggleBtn.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        });
+
+    </script>
+</body>
+
+</html>

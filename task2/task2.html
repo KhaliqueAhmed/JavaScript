@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        nav {
+            background-color: greenyellow;
+            padding: 5px;
+            margin-top: 4px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            gap: 20px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        /* Default section style */
+        section {
+            padding: 30px;
+            transition: background-color 0.5s;
+        }
+
+        /* Highlight when targeted via URL hash */
+        section:target {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>About Me</h2>
+    <nav>
+        <ul class="nav-menu">
+            <li> <a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#projects">Project</a></li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h3>Home Section</h3>
+        <p>Welcome to my website!</p>
+    </section>
+
+    <section id="about">
+        <h3>About Me</h3>
+        <p>Hi, I am Khalique, a web developer.</p>
+    </section>
+
+    <section id="projects">
+        <h3>Projects</h3>
+        <p>Here are some projects I built.</p>
+    </section>
+
+    <section id="profile">
+        <h3>Profile</h3>
+        <p>My personal profile details.</p>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Api</title>
+</head>
+<body>
+    <p id="fact"></p>
+    <button id="btn" onclick="getFacts()">Get facts</button>
+
+    <script>
+        const URL = "https://catfact.ninja/fact";
+        const factPara =document.querySelector("#fact");
+        const btn=document.querySelector("#btn");
+
+        const getFacts= async ()=>{
+            console.log("getting data....");
+            let response= await fetch(URL);
+
+            console.log(response); // json format
+            let data =await response.json();  // json data conveted to readable format
+            
+            lconsole.log(data)
+
+                   }
+    </script>
+</body>
+</html>

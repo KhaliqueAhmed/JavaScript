@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setFocus
+    </title>
+</head>
+
+<body>
+
+    <script>
+
+        
+        function add()
+        {
+        let n1=parseInt( document.getElementById('num1').value);
+        let n2=parseInt( document.getElementById('num2').value);
+       
+        document.getElementById('result').value=n1+n2;
+        }
+
+        function sub()
+        {
+        let n1=parseInt( document.getElementById('num1').value);
+        let n2=parseInt( document.getElementById('num2').value);
+        document.getElementById('result').value=n1-n2;
+        }
+
+        function div()
+        {
+        let n1=parseInt( document.getElementById('num1').value);
+        let n2=parseInt( document.getElementById('num2').value);
+        document.getElementById('result').value=n1/n2;
+        }
+    </script>
+    
+    <label for="num1">Enter first Number</label>
+    <input type="number" name="num1" id="num1"> <br><br>
+
+    <label for="num2">Enter second Number</label>
+    <input type="number" name="num2" id="num2"> <br> <br>
+    
+    <span> Operation</span>
+    <button onclick="add()" >+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">X</button>
+    <button onclick="div()">/</button>
+    <br> <br>
+    <span>result</span>
+    <input type="number" id="result">
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        async function fetchData() {
+            let url = 'a9ac92ee75476bdc48b8';
+            let response= await fetch(url);
+            let data =await response.json();
+
+            for(key in data){
+                document.write(key +" : "+data[key]+"<br>")
+            }
+        }
+        fetchData();
+
+    </script>
+</body>
+
+</html>

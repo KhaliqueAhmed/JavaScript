@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery and Form</title>
+    <style>
+        
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap:5px;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            flex: 1 1 150px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        .gallery-item img {
+            
+            width: 100%;
+            display: block;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            
+        }
+
+        form input ,textarea{
+        padding: 5px;
+        border: 1 px solid #ccc;
+        border-radius: 10px;
+        margin:3px;
+        }
+
+        form button{
+            background-color: greenyellow;
+            font-weight: 600;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Image Gallery</h2>
+    <section class="gallery">
+        <div class="gallery-item"><img src="download (1).webp" alt=""></div>
+        <div class="gallery-item"><img src="download (1).webp" alt=""></div>
+        <div class="gallery-item"><img src="download (1).webp" alt=""></div>
+        <div class="gallery-item"><img src="download (1).webp" alt=""></div>
+        
+    </section>
+
+    <section class="form">
+        <form action="">
+            <label for="name">Name: </label> 
+            <input type="text" placeholder="Eter your name"> 
+
+            <label for="email">Email:</label> 
+            <input type="email" name="" id="" placeholder="Enter your email"> 
+            
+            <label for="msg">Message:</label>
+            <textarea name="" id="" placeholder="write message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+
+</html>

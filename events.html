@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        h1,h4{
+            background-color: black;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events in JS</h1>
+    <p>The change in the state of an object is known as an Event.</p>
+    <pre>Events are fired to notify code of "intersting changes " that may affect 
+        code execution.
+
+        
+    </pre>
+
+    <br>
+
+    <h4>Event Objects</h4>
+    <button onclick="fun(event)">Click Me!</button>
+
+    
+    
+    <script>
+        
+
+        function fun(evt)
+        {
+            console.log(evt);
+            console.log("button clikced")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <style>
+        div{
+            background-color: greenyellow;
+            width: auto;
+            display: inline-block;
+    
+        }
+
+        h3
+        {
+            text-align: center;
+        }
+
+        table,td{
+            border: 3px solid red;
+            border-collapse: collapse;
+        }
+        table{
+            border-top:8px solid blue;
+            border-left: 8px solid blue;
+            border-bottom: 8px solid yellow;
+            border-right: 8px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    
+<div>
+
+    <h3>Simple Marksheet</h3>
+    <table>
+        <tr id="row1">
+            <th>S.No</th>
+            <th>Subject</th>
+            <th>Marks Obtnd</th>
+            <th>Max Marks</th>
+
+            <th>Total M.O</th>
+            <th>Total M.M</th>
+        </tr>
+
+        <tr id="row2">
+            <td>01</td>
+            <td>C++</td>
+            <td>70</td>
+            <td>100</td>
+
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+        </tr>
+
+        
+        <tr id="row3">
+            <td>02</td>
+            <td>C++(Pr)</td>
+            <td>42</td>
+            <td>50</td>
+            
+            <td></td>
+            <td></td>
+        </tr>
+
+        
+        <tr id="row4">
+            
+            <td>03</td>
+            <td>we</td>
+            <td>80</td>
+            <td>100</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        
+        <tr >
+            
+            <td>04</td>
+            <td>we(PR)</td>
+            <td>48</td>
+            <td>50</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>05</td>
+            <td colspan="3" style="text-align: center;">Percentage</td>
+            <td colspan="2 " style="text-align: center;">80%</td>
+
+        </tr>
+    </table>
+</div>
+</body>
+</html>
